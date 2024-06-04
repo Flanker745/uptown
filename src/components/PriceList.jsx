@@ -4,15 +4,15 @@ import { FaChevronRight } from "react-icons/fa6";
 import PricePlan from "./PricePlan";
 import PaymentPlans from "./PaymentPlan";
 import CurrentPlan from "./CurrentPlan";
-export default function Price() {
+function Price() {
   const [plan, updatePlan] = useState("pric");
   return (
     <>
-      <div className="w-[95%] m-auto lg:mt-[90px] mt-9">
-        <h4 className="sm:text-[50px] text-[35px]   font-semibold text-center	text-[#325D84]">
+      <div id="price" className="w-[95%] m-auto lg:pt-[90px] pt-9">
+        <h4 className="text-primary  font-semibold text-center	text-[#325D84]">
           PRICE LIST
         </h4>
-        <h6 className=" sm:text-[21px] text-center	">
+        <h6 className=" sm:text-[18px] text-center	">
           Within the premises of the Sushma Township are reputed Schools.
         </h6>
         <div className="flex mt-9 justify-arount   ">
@@ -75,3 +75,4 @@ export default function Price() {
     </>
   );
 }
+export default  Price

@@ -4,16 +4,16 @@ import { CiHospital1 } from "react-icons/ci";
 import { MdOutlineDirectionsRailway } from "react-icons/md";
 import { AiTwotoneShop } from "react-icons/ai";
 import { FaPlane } from "react-icons/fa";
-export default function Locatio() {
+ function Locatio() {
   return (
     <>
-      <div className="w-[100%]  text-center mt-9 sm:mt-[90px]">
+      <div id="location" className="w-[100%]  text-center pt-9 sm:pt-[90px]">
         <div className="w-[95%] m-auto">
           <h4 className="md:text-[50px] text-[25px] sm:text-[30px] font-semibold  text-center	text-neutral-600">
             {" "}
             WORLD CLASS LOCATION
           </h4>
-          <h6 className=" md:text-[21px] text-[12px] sm:text-[18px] font-semibold text-center text-neutral-500  md:w-[80%] w-[95%]	lg:w-[60%] m-auto">
+          <h6 className=" md:text-[18px] text-[12px] sm:text-[18px] font-semibold text-center text-neutral-500  md:w-[80%] w-[95%]	lg:w-[60%] m-auto">
             Location of Uptown Skylla Zirakpur is Very Prime as it is close to
             Malls of Zirakpur, prominent Schools of Zirakpur,
           </h6>
@@ -122,3 +122,4 @@ export default function Locatio() {
     </>
   );
 }
+export default Locatio

@@ -2,15 +2,15 @@ import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 import { faqdata1 } from "./Faqdata";
-export default function Faq() {
+function Faq() {
   let faqd = faqdata1;
   const [faqid, setfaqid] = useState(faqd[0].id);
   return (
     <>
       <div>
-        {faqd.map((v) => {
+        {faqd.map((v,i) => {
           return (
-            <div className="w-full hover:scale-105 duration-300 mt-2 sm:mt-4">
+            <div key={i} className="w-full hover:scale-105 duration-300 mt-2 sm:mt-4">
               <div
                 onClick={() => {
                   setfaqid(faqid === v.id ? 0 : v.id);
@@ -24,7 +24,7 @@ export default function Faq() {
                 <h5 className="text-[14px] sm:text-[22px] w-[90%]  pl-8 font-semibold">
                   {v.id}. {v.ques}
                 </h5>
-                <h5 className="text-[14px] sm:text-[30px] text-[20px] w-[10%]">
+                <h5 className="text-[14px] sm:text-[30px] md:text-[20px] w-[10%]">
                   {faqid === v.id ? <FaChevronDown /> : <FaChevronRight />}
                 </h5>
               </div>
@@ -34,7 +34,7 @@ export default function Faq() {
                 }  rounded-b-[7px]`}
               >
                 <h5 className="sm:text-[22px] py-2 sm:py-5 border-t w-[97%] m-auto text-white  ">
-                  <h5 className="w-[90%] m-auto">{v.ans}</h5>
+                  <div className="w-[95%] m-auto">{v.ans}</div>
                 </h5>
               </div>
             </div>
@@ -45,3 +45,4 @@ export default function Faq() {
   );
 }
 //
+export default  Faq

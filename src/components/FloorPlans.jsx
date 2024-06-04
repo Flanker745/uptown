@@ -2,15 +2,15 @@ import { useState } from "react";
 import FloorPlansFaq from "./FloorPlansFaq";
 import TowerPlan from "./TowerPlan";
 import MasterPlan from "./MasterPlan";
-export default function Floor() {
+ function Floor() {
   const [slide, updateSlide] = useState("unit");
   return (
     <>
-      <div className="w-[95%] m-auto mt-9 lg:mt-[90px]">
-        <h4 className="sm:text-[50px] text-[35px] font-semibold text-center	text-[#173F63]">
+      <div id="floorPlans" className="w-[95%] m-auto pt-9 lg:pt-[90px]">
+        <h4 className="text-primary text-[35px] font-semibold text-center	text-[#173F63]">
           FLOOR PLAN
         </h4>
-        <h6 className=" sm:text-[21px] text-center	">
+        <h6 className=" sm:text-[18px] text-center	">
           Within the premises of the Sushma Township are reputed Schools.
         </h6>
         <div className="w-full flex gap-4 text-[15px] md:text-[30px]  mt-3 sm:mt-0 text-center px-5  border-b-2 font-semibold text-[#A0A0A0]">
@@ -69,3 +69,4 @@ export default function Floor() {
     </>
   );
 }
+export default Floor

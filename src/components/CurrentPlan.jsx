@@ -4,7 +4,7 @@ function CurrentPlan() {
   return (
     <>
       <div>
-        <img src={img} alt="" />
+        <img className="w-full" src={img} alt="" />
       </div>
     </>
   );

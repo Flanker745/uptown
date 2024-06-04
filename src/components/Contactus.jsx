@@ -9,10 +9,10 @@ import horseimg from "../images/about_pat (1) 1.png";
 import img2 from "../images/Rectangle 683.png";
 import { MdOutlineMailOutline } from "react-icons/md";
 
-export default function Contactus() {
+ function Contactus() {
   return (
     <>
-      <div className="relative mt-[60px]">
+      <div  className="relative mt-[60px]">
         <div className="absolute sm:text-[16px] text-[12px] w-fit border-t top-0 translate-x-[-50%] left-[50%] flex ">
           <button className="md:px-7 px-4 py-1 bg-white  text-[#325D84]  rounded-bl-[12px] md:rounded-bl-[20px]">
             Near By
@@ -65,7 +65,7 @@ export default function Contactus() {
         </div>
         <img className="w-full h-[200px] md:h-[400px]" src={img1} alt="" />
       </div>
-      <div className="mt-[60px] flex flex-wrap">
+      <div id="contactus" className="pt-[60px] flex flex-wrap">
         <div className="lg:w-[60%] w-full flex bg-[#173F63] relative">
           <div className="absolute bottom-0 left-0">
             <img src={horseimg} alt="" />
@@ -163,3 +163,4 @@ export default function Contactus() {
     </>
   );
 }
+export default Contactus

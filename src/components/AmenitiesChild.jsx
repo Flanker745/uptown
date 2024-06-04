@@ -1,4 +1,4 @@
-export default function AmenitiesChild(prop) {
+ function AmenitiesChild(prop) {
   return (
     <>
       <div className="lg:w-[33%] sm:w-[49%] w-[99%] mt-2 flex text-[#173F63] border border-[#173F63]">
@@ -6,9 +6,11 @@ export default function AmenitiesChild(prop) {
           <img className="w-full h-full " src={prop.image} alt="" />
         </div>
         <div className="w-1/2 flex items-center px-3 justify-center relative">
-          <div className="absolute p-3 sm:p-4 border bg-blue-100 z-[-9] rounded-[50%] top-[5%] left-[2%]"></div>
+          
           <div className="">
-            <div className="text-[28px] sm:text-[35px]">{prop.icon}</div>
+            <div className="text-[28px] relative sm:text-[35px]">
+            <div className="absolute p-3 sm:p-4 border bg-blue-100 z-[-9] rounded-[50%] top-[-15px] left-[-10px]"></div>
+              {prop.icon}</div>
             <div className="">
               <h5 className="text-[14px] sm:text-[16px] font-bold">
                 {prop.heading}
@@ -24,3 +26,4 @@ export default function AmenitiesChild(prop) {
     </>
   );
 }
+export default AmenitiesChild

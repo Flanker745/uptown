@@ -1,5 +1,5 @@
 import img from "../images/c.png";
-export default function Total() {
+ function Total() {
   return (
     <>
       <div className="w-[95%] m-auto border  md:mt-[50px] bg-[url('./images/Rectangle661.png')] bg-cover">
@@ -63,3 +63,4 @@ export default function Total() {
     </>
   );
 }
+export default Total

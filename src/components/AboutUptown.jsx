@@ -1,10 +1,10 @@
 import about1 from "../images/Rectangle665.png";
 import about2 from "../images/Rectangle666.png";
 import aboutbg from "../images/about_pat (1) 1.png";
-export default function About() {
+ function About() {
   return (
     <>
-      <div className="flex flex-wrap relative overflow-hidden py-9 sm:pt-[90px]">
+      <div id="aboutUs" className="flex flex-wrap relative overflow-hidden py-9 sm:pt-[90px]">
         <div className="absolute hidden lg:block top-[-60%]  z-[-9] right-[0%] w-[41%]">
           <img src={aboutbg} alt="" />
         </div>
@@ -43,3 +43,4 @@ export default function About() {
     </>
   );
 }
+export default About

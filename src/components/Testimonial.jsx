@@ -1,15 +1,14 @@
 import img1 from "../images/Rectangle 97.png";
 import img2 from "../images/Rectangle 98.png";
 import { FaArrowAltCircleDown } from "react-icons/fa";
-
-export default function Testimonial() {
+function Testimonial() {
   return (
     <>
       <div className="w-[95%] m-auto md:mt-[90px] mt-9">
-        <h4 className="sm:text-[50px] text-[35px] font-bold text-center	text-[#173F63]">
+        <h4 className="text-primary font-bold text-center	text-[#173F63]">
           TESTIMONIAL
         </h4>
-        <h6 className=" sm:text-[21px] text-center	">
+        <h6 className=" sm:text-[18px] text-center	">
           Within the premises of the Sushma Township are reputed Schools.
         </h6>
         <div className="lg:w-[85%] w-[95%]  md:w-full m-auto flex flex-wrap justify-between mt-4 sm:mt-[35px]">
@@ -80,3 +79,5 @@ export default function Testimonial() {
     </>
   );
 }
+
+export default  Testimonial

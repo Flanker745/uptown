@@ -9,14 +9,14 @@ import img3 from "../images/Rectangle 643 (2).png";
 import img4 from "../images/Rectangle 643 (3).png";
 import img5 from "../images/Rectangle 643 (4).png";
 import img6 from "../images/Rectangle 643 (5).png";
-export default function Amenities() {
+ function Amenities() {
   return (
     <>
-      <div className="w-[95%] m-auto mt-9 sm:mt-[90px]">
-        <h4 className="sm:text-[50px] text-[35px] font-semibold text-center	text-[#173F63]">
+      <div id="amenitie" className="w-[95%] m-auto pt-9 sm:pt-[90px]">
+        <h4 className="text-primary font-semibold text-center	text-[#173F63]">
           AMENITIES
         </h4>
-        <h6 className=" sm:text-[21px] text-center	">
+        <h6 className=" sm:text-[18px] text-center	">
           Within the premises of the Sushma Township are reputed Schools.
         </h6>
         <div className="flex flex-wrap justify-between mt-4 sm:mt-[50px]">
@@ -55,3 +55,5 @@ export default function Amenities() {
     </>
   );
 }
+
+export default Amenities

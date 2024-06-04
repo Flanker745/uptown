@@ -1,13 +1,13 @@
 import img1 from "../images/Rectangle 681.png";
 import Faq from "./Faq";
-export default function FaqSection() {
+ function FaqSection() {
   return (
     <>
-      <div className=" sm:mt-[90px] mt-9">
-        <h4 className="sm:text-[50px] text-[35px] font-semibold text-center	text-[#173F63]">
+      <div id="faq" className=" sm:pt-[90px] pt-9">
+        <h4 className="text-primary font-semibold text-center	text-[#173F63]">
           FAQ
         </h4>
-        <h6 className=" sm:text-[21px] text-center	">
+        <h6 className=" sm:text-[18px] text-center	">
           Within the premises of the Sushma Township are reputed Schools.
         </h6>
         <div className="sm:mt-[60px] flex">
@@ -22,3 +22,5 @@ export default function FaqSection() {
     </>
   );
 }
+
+export default FaqSection

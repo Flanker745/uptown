@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa6";
 import { TbBrandPicsart } from "react-icons/tb";
 import { FaYoutube } from "react-icons/fa";
 
-export default function Footer() {
+ function Footer() {
   return (
     <>
       <div className="sm:mt-[90px]  mt-9 ">
@@ -87,3 +87,4 @@ export default function Footer() {
     </>
   );
 }
+export default Footer

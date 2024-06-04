@@ -10,14 +10,14 @@ import {
   IoKeyOutline,
   IoCallOutline,
 } from "react-icons/io5";
-export default function OurOffring() {
+ function OurOffring() {
   return (
     <>
-      <div className="sm:mt-[90px] mt-9">
-        <h4 className="sm:text-[50px] text-[35px] font-semibold text-center	text-[#173F63]">
+      <div id="product" className="sm:pt-[90px] pt-9">
+        <h4 className="text-primary  font-semibold text-center	text-[#173F63]">
           OUR OFFERING
         </h4>
-        <h6 className=" sm:text-[21px] text-center	">
+        <h6 className=" text-center	sm:text-[18px]">
           Within the premises of the Sushma Township are reputed Schools.
         </h6>
         <div className="w-[95%] m-auto flex flex-wrap sm:mt-5 justify-between">
@@ -26,7 +26,7 @@ export default function OurOffring() {
               <img className="w-full" src={Apartments1} alt="" />
             </div>
             <div className="mt-2 px-1">
-              <h4 className="text-[22px] sm:text-[27px] font-bold text-[#173F63]">
+              <h4 className="text-[20px] sm:text-[27px] font-bold text-[#173F63]">
                 High Rise Apartments
               </h4>
               <div className="flex items-center">
@@ -95,7 +95,7 @@ export default function OurOffring() {
               <img className="w-full" src={Apartments2} alt="" />
             </div>
             <div className="mt-2 px-1">
-              <h4 className="text-[22px] sm:text-[27px] font-bold text-[#173F63]">
+              <h4 className="text-[20px] sm:text-[27px] font-bold text-[#173F63]">
                 High Rise Apartments
               </h4>
               <div className="flex items-center">
@@ -149,7 +149,7 @@ export default function OurOffring() {
               <img className="w-full" src={Apartments3} alt="" />
             </div>
             <div className="mt-2 px-1">
-              <h4 className="text-[22px] sm:text-[27px] font-bold text-[#173F63]">
+              <h4 className="text-[20px] sm:text-[27px] font-bold text-[#173F63]">
                 High Rise Apartments
               </h4>
               <div className="flex items-center">
@@ -218,3 +218,4 @@ export default function OurOffring() {
     </>
   );
 }
+export default OurOffring
